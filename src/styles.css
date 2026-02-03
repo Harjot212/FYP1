@@ -1,0 +1,88 @@
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 24px clamp(16px, 5vw, 48px);
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: #6366f1;
+  margin: 0 0 4px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+}
+
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav-link {
+  padding: 8px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #374151;
+  background: #f3f4f6;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.nav-link--active {
+  background: #4338ca;
+  color: white;
+}
+
+.app-main {
+  flex: 1;
+  padding: 32px clamp(16px, 5vw, 48px);
+}
+
+.page {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.page h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
